@@ -41,12 +41,12 @@
     <link href="http://example.com/2021/09/22/%E5%9C%A8%E8%BF%99%E9%87%8C-1/"/>
     <id>http://example.com/2021/09/22/%E5%9C%A8%E8%BF%99%E9%87%8C-1/</id>
     <published>2021-09-22T04:35:37.000Z</published>
-    <updated>2021-10-20T12:08:43.747Z</updated>
+    <updated>2021-10-20T12:20:36.314Z</updated>
     
-    <content type="html"><![CDATA[<p>1.<br>     在程序设计课程上用/* */注释代码，但在c语言中好像并不是好办法，尤其是在注释的代码中原先已经有注释存在，可能会报错，更好的办法是用#if 和 #endif。<br>！<a href="https://imgtu.com/i/5D0KOS"></a></p><span id="more"></span> <p>2.<br>      \0是什么？<br>      \0的ASCLL码值为10，他标志着字符串的结束。<br>      没有\0就无法判断一个字符串是否结束，如果trlen和printf以%s的格式打印时就是一直运行直到到达\0停止。<br>3.<br>     转义字符<br>！<a href="https://imgtu.com/i/5DrBTg"></a></p>]]></content>
+    <content type="html"><![CDATA[<p>1.<br>     在程序设计课程上用/* */注释代码，但在c语言中好像并不是好办法，尤其是在注释的代码中原先已经有注释存在，可能会报错，更好的办法是用#if 和 #endif。<br>！[]<a href="https://imgtu.com/i/5D0KOS">https://imgtu.com/i/5D0KOS</a></p><span id="more"></span> <p>2.<br>      \0是什么？<br>      \0的ASCLL码值为10，他标志着字符串的结束。<br>      没有\0就无法判断一个字符串是否结束，如果trlen和printf以%s的格式打印时就是一直运行直到到达\0停止。<br>3.<br>     转义字符<br>！[]<a href="https://imgtu.com/i/5DrBTg">https://imgtu.com/i/5DrBTg</a></p>]]></content>
     
     
-    <summary type="html">&lt;p&gt;1.&lt;br&gt;     在程序设计课程上用/* */注释代码，但在c语言中好像并不是好办法，尤其是在注释的代码中原先已经有注释存在，可能会报错，更好的办法是用#if 和 #endif。&lt;br&gt;！&lt;a href=&quot;https://imgtu.com/i/5D0KOS&quot;&gt;&lt;/a&gt;&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;1.&lt;br&gt;     在程序设计课程上用/* */注释代码，但在c语言中好像并不是好办法，尤其是在注释的代码中原先已经有注释存在，可能会报错，更好的办法是用#if 和 #endif。&lt;br&gt;！[]&lt;a href=&quot;https://imgtu.com/i/5D0KOS&quot;&gt;https://imgtu.com/i/5D0KOS&lt;/a&gt;&lt;/p&gt;</summary>
     
     
     
