@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-10-23T03:48:02.048Z</updated>
+  <updated>2021-10-23T03:52:45.263Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,14 +21,14 @@
     <link href="http://example.com/2021/10/20/%E5%9C%A8%E8%BF%99%E9%87%8C-2/"/>
     <id>http://example.com/2021/10/20/%E5%9C%A8%E8%BF%99%E9%87%8C-2/</id>
     <published>2021-10-20T12:22:40.888Z</published>
-    <updated>2021-10-23T03:48:02.048Z</updated>
+    <updated>2021-10-23T03:52:45.263Z</updated>
     
-    <content type="html"><![CDATA[<hr><p>title: 关于我啥都不会而这一个月来学习的C语言问题知识<br>date: 2021-10-20 20:22:40<br>tags:        </p><p>1.<br>     在程序设计课程上用/* */注释代码，但在c语言中好像并不是好办法，尤其是在注释的代码中原先已经有注释存在，可能会报错，更好的办法是用#if 和 #endif。<br><img src="%5B!%5B5gg4Og.png%5D(https://z3.ax1x.com/2021/10/23/5gg4Og.png)%5D(https://imgtu.com/i/5gg4Og)"></p><span id="more"></span> <p>2.<br>      \0是什么？<br>      \0的ASCLL码值为10，他标志着字符串的结束。<br>      没有\0就无法判断一个字符串是否结束，如果trlen和printf以%s的格式打印时就是一直运行直到到达\0停止。<br>3.<br>     转义字符<br><img src="%5B!%5B5ggj6U.png%5D(https://z3.ax1x.com/2021/10/23/5ggj6U.png)%5D(https://imgtu.com/i/5ggj6U)"></p>]]></content>
+    <content type="html"><![CDATA[<hr><p>title: 关于我啥都不会而这一个月来学习的C语言问题知识<br>date: 2021-10-20 20:22:40<br>tags:        </p><p>1.<br>     在程序设计课程上用/* */注释代码，但在c语言中好像并不是好办法，尤其是在注释的代码中原先已经有注释存在，可能会报错，更好的办法是用#if 和 #end<br><img src="https://z3.ax1x.com/2021/10/23/5gg4Og.png" alt="5gg4Og.png">](<a href="https://imgtu.com/i/5gg4Og">https://imgtu.com/i/5gg4Og</a>))</p><span id="more"></span> <p>2.<br>      \0是什么？<br>      \0的ASCLL码值为10，他标志着字符串的结束。<br>      没有\0就无法判断一个字符串是否结束，如果trlen和printf以%s的格式打印时就是一直运行直到到达\0停止。<br>3.<br>     转义字符<br><img src="https://z3.ax1x.com/2021/10/23/5ggj6U.png" alt="5ggj6U.png">](<a href="https://imgtu.com/i/5ggj6U">https://imgtu.com/i/5ggj6U</a>))</p>]]></content>
     
     
     <summary type="html">&lt;hr&gt;
 &lt;p&gt;title: 关于我啥都不会而这一个月来学习的C语言问题知识&lt;br&gt;date: 2021-10-20 20:22:40&lt;br&gt;tags:        &lt;/p&gt;
-&lt;p&gt;1.&lt;br&gt;     在程序设计课程上用/* */注释代码，但在c语言中好像并不是好办法，尤其是在注释的代码中原先已经有注释存在，可能会报错，更好的办法是用#if 和 #endif。&lt;br&gt;&lt;img src=&quot;%5B!%5B5gg4Og.png%5D(https://z3.ax1x.com/2021/10/23/5gg4Og.png)%5D(https://imgtu.com/i/5gg4Og)&quot;&gt;&lt;/p&gt;</summary>
+&lt;p&gt;1.&lt;br&gt;     在程序设计课程上用/* */注释代码，但在c语言中好像并不是好办法，尤其是在注释的代码中原先已经有注释存在，可能会报错，更好的办法是用#if 和 #end&lt;br&gt;&lt;img src=&quot;https://z3.ax1x.com/2021/10/23/5gg4Og.png&quot; alt=&quot;5gg4Og.png&quot;&gt;](&lt;a href=&quot;https://imgtu.com/i/5gg4Og&quot;&gt;https://imgtu.com/i/5gg4Og&lt;/a&gt;))&lt;/p&gt;</summary>
     
     
     
