@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-10-23T03:52:45.263Z</updated>
+  <updated>2021-10-23T07:22:34.738Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,18 +17,35 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>PHP初学习</title>
+    <link href="http://example.com/2021/10/23/php%E5%88%9D%E5%AD%A6%E4%B9%A0/"/>
+    <id>http://example.com/2021/10/23/php%E5%88%9D%E5%AD%A6%E4%B9%A0/</id>
+    <published>2021-10-23T04:30:58.000Z</published>
+    <updated>2021-10-23T07:22:34.738Z</updated>
+    
+    <content type="html"><![CDATA[<p>1.对PHP的初认识：<br>      PHP （超文本预处理器），具有成本低、速度快、可移植性好、 内置丰富的函数库等优点，因此被越来越多的企业应用于web开发中，具有较高的数据传送处理水平和输出水平。<br>      PHP与C语言相类似。类C语言<br>      PHP是嵌入在HTML中的服务器端脚本语言。它用于管理动态内容，数据库，会话跟踪，甚至建立整个电子商务网站。<br>                                                                         <span id="more"></span>  </p><p>2.PHP的语法认识<br>     <?php                             //?与php没有空格。     echo "Hello World !";     //每句结束以；结尾     ?></p><p>注释：与C语言相似，单行注释多出一个 #…….，其//….与块注释/<em>……..</em>/与C语言相同。</p><p>3.变量：<br>      变量名必须以字母或者下划线开始，不能用数字开头，中间不能有空格<br>      尤其一点是在PHP中要区分大小写，大写与小写是不同结果的。$a=5;  $A=7;  输出为不同结果<br>&lt;?php</p><p>$a = 1;</p><p>$A = 2;</p><p>echo $a . “<br>“;</p><p>echo $A;</p><p>?&gt;</p><p>echo理解：在PHP中，echo可以说是使用得最多的一个”函数”了，确切地说，echo并不是一个”函数”<br><img src="https://i.loli.net/2021/10/23/Dfj1pk7mFLwxEBX.png" alt="屏幕截图 2021-10-23 145123.png"></p><p>echo后面所跟的括号的含义：不是调用函数时所需的括号，括号中的内容也不是函数的参数列表，而是相当于一个PHP表达式，echo的括号作用可以如下理解<br><img src="https://i.loli.net/2021/10/23/oySmarfHnpN24GO.png" alt="屏幕截图 2021-10-23 145136.png"></p><p>echo，在PHP中实际上都属于语言构造器，简单来说，echo是一种特殊的语法结构，echo可以输出字符串拼接后的结果：<br><img src="https://i.loli.net/2021/10/23/BK9jhJOygH3CqdZ.png" alt="屏幕截图 2021-10-23 145220.png"></p><p>echo和print同为语言结构，不过echo的效率比print要高一点点。</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;1.对PHP的初认识：&lt;br&gt;      PHP （超文本预处理器），具有成本低、速度快、可移植性好、 内置丰富的函数库等优点，因此被越来越多的企业应用于web开发中，具有较高的数据传送处理水平和输出水平。&lt;br&gt;      PHP与C语言相类似。类C语言&lt;br&gt;      PHP是嵌入在HTML中的服务器端脚本语言。它用于管理动态内容，数据库，会话跟踪，甚至建立整个电子商务网站。&lt;br&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title></title>
     <link href="http://example.com/2021/10/20/%E5%9C%A8%E8%BF%99%E9%87%8C-2/"/>
     <id>http://example.com/2021/10/20/%E5%9C%A8%E8%BF%99%E9%87%8C-2/</id>
     <published>2021-10-20T12:22:40.888Z</published>
-    <updated>2021-10-23T03:52:45.263Z</updated>
+    <updated>2021-10-23T04:01:44.901Z</updated>
     
-    <content type="html"><![CDATA[<hr><p>title: 关于我啥都不会而这一个月来学习的C语言问题知识<br>date: 2021-10-20 20:22:40<br>tags:        </p><p>1.<br>     在程序设计课程上用/* */注释代码，但在c语言中好像并不是好办法，尤其是在注释的代码中原先已经有注释存在，可能会报错，更好的办法是用#if 和 #end<br><img src="https://z3.ax1x.com/2021/10/23/5gg4Og.png" alt="5gg4Og.png">](<a href="https://imgtu.com/i/5gg4Og">https://imgtu.com/i/5gg4Og</a>))</p><span id="more"></span> <p>2.<br>      \0是什么？<br>      \0的ASCLL码值为10，他标志着字符串的结束。<br>      没有\0就无法判断一个字符串是否结束，如果trlen和printf以%s的格式打印时就是一直运行直到到达\0停止。<br>3.<br>     转义字符<br><img src="https://z3.ax1x.com/2021/10/23/5ggj6U.png" alt="5ggj6U.png">](<a href="https://imgtu.com/i/5ggj6U">https://imgtu.com/i/5ggj6U</a>))</p>]]></content>
+    <content type="html"><![CDATA[<hr><p>title: 关于我啥都不会而这一个月来学习的C语言问题知识<br>date: 2021-10-20 20:22:40<br>tags:        </p><p>1.<br>     在程序设计课程上用/* */注释代码，但在c语言中好像并不是好办法，尤其是在注释的代码中原先已经有注释存在，可能会报错，更好的办法是用#if 和 #end<br><img src="https://i.loli.net/2021/10/23/KA3HQyg9FXla7nB.png" alt="屏幕截图 2021-10-20 194726.png"></p><span id="more"></span> <p>2.<br>      \0是什么？<br>      \0的ASCLL码值为10，他标志着字符串的结束。<br>      没有\0就无法判断一个字符串是否结束，如果trlen和printf以%s的格式打印时就是一直运行直到到达\0停止。<br>3.<br>     转义字符<br><img src="https://i.loli.net/2021/10/23/V2kwc5aQHsiNLSA.png" alt="屏幕截图 2021-10-20 200545.png"></p>]]></content>
     
     
     <summary type="html">&lt;hr&gt;
 &lt;p&gt;title: 关于我啥都不会而这一个月来学习的C语言问题知识&lt;br&gt;date: 2021-10-20 20:22:40&lt;br&gt;tags:        &lt;/p&gt;
-&lt;p&gt;1.&lt;br&gt;     在程序设计课程上用/* */注释代码，但在c语言中好像并不是好办法，尤其是在注释的代码中原先已经有注释存在，可能会报错，更好的办法是用#if 和 #end&lt;br&gt;&lt;img src=&quot;https://z3.ax1x.com/2021/10/23/5gg4Og.png&quot; alt=&quot;5gg4Og.png&quot;&gt;](&lt;a href=&quot;https://imgtu.com/i/5gg4Og&quot;&gt;https://imgtu.com/i/5gg4Og&lt;/a&gt;))&lt;/p&gt;</summary>
+&lt;p&gt;1.&lt;br&gt;     在程序设计课程上用/* */注释代码，但在c语言中好像并不是好办法，尤其是在注释的代码中原先已经有注释存在，可能会报错，更好的办法是用#if 和 #end&lt;br&gt;&lt;img src=&quot;https://i.loli.net/2021/10/23/KA3HQyg9FXla7nB.png&quot; alt=&quot;屏幕截图 2021-10-20 194726.png&quot;&gt;&lt;/p&gt;</summary>
     
     
     
