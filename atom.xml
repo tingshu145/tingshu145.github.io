@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-10-23T07:22:34.738Z</updated>
+  <updated>2021-10-24T11:25:19.145Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PHP变量学习</title>
+    <link href="http://example.com/2021/10/24/PHP%E5%8F%98%E9%87%8F%E5%AD%A6%E4%B9%A0/"/>
+    <id>http://example.com/2021/10/24/PHP%E5%8F%98%E9%87%8F%E5%AD%A6%E4%B9%A0/</id>
+    <published>2021-10-24T11:00:43.000Z</published>
+    <updated>2021-10-24T11:25:19.145Z</updated>
+    
+    <content type="html"><![CDATA[<p>   重要知识：</p><ol><li><p>PHP中的所有变量均以前导美元符号（$）表示</p></li><li><p>变量的值是最近赋值的值。</p></li><li><p>变量用=运算符分配，变量在左侧，表达式在右侧进行计算。</p></li><li><p>变量可以但不需要在赋值之前声明。</p></li><li><p>PHP中的变量没有内在类型 - 一个变量事先并不知道它是用来存储一个数字还是一串字符。</p></li><li><p>分配之前使用的变量具有默认值。</p></li></ol><span id="more"></span>   <pre><code>简单类型的变量：</code></pre><p>  整型：是 整数 ，没有小数点，如4195。</p><p>  双精度：是浮点数，如3.14159或49.1。</p><p>  布尔：只有两个可能的值，无论是真或假。</p><p>  NULL：是一个只有一个值的特殊类型：NULL。</p><p>  字符串：是字符序列，如’PHP支持字符串操作’。</p><p>  数组：是其他值的命名和索引集合。</p><p>（1）.整型：整数，没有小数点，它们对应于简单的整数，包括正数和负数。整数可以分配给变量，或者它们可以用在表达式中。<br>  整数可以是十进制（基数10），八进制（基数8）和十六进制（基数16）格式。十进制格式是默认值，八进制整数用前导0来指定，而十六进制有一个前导0x。与c语言类型。</p><p>（2）.双精度：浮点数，小数</p><p>（3）.布尔：<br>函数，他们只有两个可能的值，无论是真的还是假的。PHP提供了几个常量，特别是用作布尔值：TRUE和FALSE，与if函数类似。<br><img src="https://i.loli.net/2021/10/24/If3Ym1sPztK4HvT.png" alt="屏幕截图 2021-10-24 191629.png"><br>   a.如果该值是一个数字，那么如果完全等于零则为假，否则为真。<br>   b.如果值是一个字符串，如果字符串为空（字符为零）或字符串为“0”，则为false，否则为true。<br>   c.类型NULL的值始终为false。<br>   d.如果该值是一个数组，那么如果它不包含其他值，则为false，否则为true。对于包含值的对象，意味着拥有一个已经赋值的成员变量。<br>   e.不要使用双精度作为布尔值。</p><p>（4）.NULL:是只有一个值的特殊类型：NULL。为了赋予变量空值，只需将它赋值为这样<br><img src="https://i.loli.net/2021/10/24/Ludz9g2U4ZPl7mF.png" alt="屏幕截图 2021-10-24 191958.png"><br>   它在布尔上下文中评估为FALSE,这个是不区分大小写的，null也同样表示。</p><pre><code>变量范围：范围可以定义为变量对声明程序的可用范围。PHP变量可以是四种范围类型之一 </code></pre><p>1.局部变量</p><p>2.功能参数</p><p>3.全局变量</p><p>4.静态变量</p><pre><code> 变量命名：变量名称必须以字母或下划线字符开头。</code></pre><p>  变量名可以由数字，字母，下划线组成，但不能使用+， - ，％，（，）等字符，＆等等</p><p>  变量没有大小限制。</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;   重要知识：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;PHP中的所有变量均以前导美元符号（$）表示&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;变量的值是最近赋值的值。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;变量用=运算符分配，变量在左侧，表达式在右侧进行计算。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;变量可以但不需要在赋值之前声明。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;PHP中的变量没有内在类型 - 一个变量事先并不知道它是用来存储一个数字还是一串字符。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;分配之前使用的变量具有默认值。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>PHP初学习</title>
