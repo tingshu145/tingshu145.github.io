@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-10-25T02:18:38.528Z</updated>
+  <updated>2021-10-26T11:18:20.763Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,15 +21,12 @@
     <link href="http://example.com/2021/10/24/PHP%E5%B8%B8%E9%87%8F%E5%AD%A6%E4%B9%A0/"/>
     <id>http://example.com/2021/10/24/PHP%E5%B8%B8%E9%87%8F%E5%AD%A6%E4%B9%A0/</id>
     <published>2021-10-24T15:10:38.000Z</published>
-    <updated>2021-10-25T02:18:38.528Z</updated>
+    <updated>2021-10-26T11:18:20.763Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="1-php中常量是啥及其特点"><a href="#1-php中常量是啥及其特点" class="headerlink" title="1.php中常量是啥及其特点:"></a>1.php中常量是啥及其特点:</h2><p>   简单值的名称或标识符，在执行期间，常量值不能更改。常量区分大小写。一般来说，常量标识符总是大写。<br>   常数名称以字母或下划线开头，后面跟着任意数量的字母，数字或下划线。<br>   如果你已经定义了一个常量，不会被改变或未定义。<br>   要定义一个常量，你必须使用define（）函数并检索一个常量的值。<br>   如果希望动态获取常量名称，也可以使用函数constant（）读取常量的值。</p><h2 id="2-常量（）"><a href="#2-常量（）" class="headerlink" title="2.常量（）"></a>2.常量（）</h2><p><img src="https://i.loli.net/2021/10/24/27CD5onrekglZaO.png" alt="屏幕截图 2021-10-24 231709.png"></p><h2 id="3-设置-PHP-常量"><a href="#3-设置-PHP-常量" class="headerlink" title="3.设置 PHP 常量"></a>3.设置 PHP 常量</h2><p>设置常量，使用 define() 函数，函数语法如下：<br><img src="https://i.loli.net/2021/10/24/jaw1ieByO6uHmAz.png" alt="屏幕截图 2021-10-24 234942.png"></p><p>该函数有三个参数:<br>name：必选参数，常量名称，即标志符。<br>value：必选参数，常量的值。<br>case_insensitive ：可选参数，如果设置为 TRUE，该常量则大小写不敏感。默认是大小写敏感的。</p><h2 id="4-常量和变量之间的区别是"><a href="#4-常量和变量之间的区别是" class="headerlink" title="4.常量和变量之间的区别是"></a>4.常量和变量之间的区别是</h2><p>a.不用在一个常量之前写一个美元符号（$），在变量中必须写一个美元符号。<br>b.常量不能通过简单赋值来定义，它们只能使用define（）函数来定义。<br>c.可以在任何地方定义和访问常量，而不考虑变量范围规则。<br>d.一旦常量被设置，可能不会被重新定义或未定义。</p><h2 id="5-PHP魔术常量"><a href="#5-PHP魔术常量" class="headerlink" title="5.PHP魔术常量"></a>5.PHP魔术常量</h2><p>  PHP为它运行的任何脚本提供了大量的预定义常量。有五个神奇的常量根据它们的使用位置而变化。<br>例如，LINE的值取决于它在脚本中使用的行。这些特殊常量不区分大小写，如下所示 ，以供我复习<br><img src="https://i.loli.net/2021/10/24/xsaGzWbchCvMLuf.png" alt="屏幕截图 2021-10-24 234612.png"></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="1-php中常量是啥及其特点"><a href="#1-php中常量是啥及其特点" class="headerlink" title="1.php中常量是啥及其特点:"></a>1.php中常量是啥及其特点:</h2><p>   简单值的名称或标识符，在执行期间，常量值不能更改。常量区分大小写。一般来说，常量标识符总是大写。<br>   常数名称以字母或下划线开头，后面跟着任意数量的字母，数字或下划线。<br>   如果你已经定义了一个常量，不会被改变或未定义。<br>   要定义一个常量，你必须使用define（）函数并检索一个常量的值。<br>   如果希望动态获取常量名称，也可以使用函数constant（）读取常量的值。</p><span id="more"></span>   <h2 id="2-常量（）"><a href="#2-常量（）" class="headerlink" title="2.常量（）"></a>2.常量（）</h2><p><img src="https://i.loli.net/2021/10/24/27CD5onrekglZaO.png" alt="屏幕截图 2021-10-24 231709.png"></p><h2 id="3-设置-PHP-常量"><a href="#3-设置-PHP-常量" class="headerlink" title="3.设置 PHP 常量"></a>3.设置 PHP 常量</h2><p>设置常量，使用 define() 函数，函数语法如下：<br><img src="https://i.loli.net/2021/10/24/jaw1ieByO6uHmAz.png" alt="屏幕截图 2021-10-24 234942.png"></p><p>该函数有三个参数:<br>name：必选参数，常量名称，即标志符。<br>value：必选参数，常量的值。<br>case_insensitive ：可选参数，如果设置为 TRUE，该常量则大小写不敏感。默认是大小写敏感的。</p><h2 id="4-常量和变量之间的区别是"><a href="#4-常量和变量之间的区别是" class="headerlink" title="4.常量和变量之间的区别是"></a>4.常量和变量之间的区别是</h2><p>a.不用在一个常量之前写一个美元符号（$），在变量中必须写一个美元符号。<br>b.常量不能通过简单赋值来定义，它们只能使用define（）函数来定义。<br>c.可以在任何地方定义和访问常量，而不考虑变量范围规则。<br>d.一旦常量被设置，可能不会被重新定义或未定义。</p><h2 id="5-PHP魔术常量"><a href="#5-PHP魔术常量" class="headerlink" title="5.PHP魔术常量"></a>5.PHP魔术常量</h2><p>  PHP为它运行的任何脚本提供了大量的预定义常量。有五个神奇的常量根据它们的使用位置而变化。<br>例如，LINE的值取决于它在脚本中使用的行。这些特殊常量不区分大小写，如下所示 ，以供我复习<br><img src="https://i.loli.net/2021/10/24/xsaGzWbchCvMLuf.png" alt="屏幕截图 2021-10-24 234612.png"></p>]]></content>
     
     
-      
-      
-    <summary type="html">&lt;h2 id=&quot;1-php中常量是啥及其特点&quot;&gt;&lt;a href=&quot;#1-php中常量是啥及其特点&quot; class=&quot;headerlink&quot; title=&quot;1.php中常量是啥及其特点:&quot;&gt;&lt;/a&gt;1.php中常量是啥及其特点:&lt;/h2&gt;&lt;p&gt;   简单值的名称或标识符，在执行期间，</summary>
-      
+    <summary type="html">&lt;h2 id=&quot;1-php中常量是啥及其特点&quot;&gt;&lt;a href=&quot;#1-php中常量是啥及其特点&quot; class=&quot;headerlink&quot; title=&quot;1.php中常量是啥及其特点:&quot;&gt;&lt;/a&gt;1.php中常量是啥及其特点:&lt;/h2&gt;&lt;p&gt;   简单值的名称或标识符，在执行期间，常量值不能更改。常量区分大小写。一般来说，常量标识符总是大写。&lt;br&gt;   常数名称以字母或下划线开头，后面跟着任意数量的字母，数字或下划线。&lt;br&gt;   如果你已经定义了一个常量，不会被改变或未定义。&lt;br&gt;   要定义一个常量，你必须使用define（）函数并检索一个常量的值。&lt;br&gt;   如果希望动态获取常量名称，也可以使用函数constant（）读取常量的值。&lt;/p&gt;</summary>
     
     
     
