@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-10-26T11:18:20.763Z</updated>
+  <updated>2021-10-30T07:04:50.305Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>php运算符特点</title>
+    <link href="http://example.com/2021/10/30/php%E8%BF%90%E7%AE%97%E7%AC%A6%E7%89%B9%E7%82%B9/"/>
+    <id>http://example.com/2021/10/30/php%E8%BF%90%E7%AE%97%E7%AC%A6%E7%89%B9%E7%82%B9/</id>
+    <published>2021-10-30T06:21:37.000Z</published>
+    <updated>2021-10-30T07:04:50.305Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="PHP的运算符类型大多与C语言的类似，所以我只列出一些它所特有的，以供我自己的复习"><a href="#PHP的运算符类型大多与C语言的类似，所以我只列出一些它所特有的，以供我自己的复习" class="headerlink" title="PHP的运算符类型大多与C语言的类似，所以我只列出一些它所特有的，以供我自己的复习"></a>PHP的运算符类型大多与C语言的类似，所以我只列出一些它所特有的，以供我自己的复习</h2><span id="more"></span>  <h2 id="1-PHP中赋值运算符的类型与用法与C语言中的不同"><a href="#1-PHP中赋值运算符的类型与用法与C语言中的不同" class="headerlink" title="1.PHP中赋值运算符的类型与用法与C语言中的不同"></a>1.PHP中赋值运算符的类型与用法与C语言中的不同</h2><p><img src="https://i.loli.net/2021/10/30/kyU7F24iab8GrR3.png" alt="屏幕截图 2021-10-30 143644.png"></p><p>运行结果及实例就如同教程中的<br><img src="https://i.loli.net/2021/10/30/Ly6PGOpS7geQwoh.png" alt="屏幕截图 2021-10-30 143716.png"></p><h2 id="2-对于比较运算符"><a href="#2-对于比较运算符" class="headerlink" title="2.对于比较运算符"></a>2.对于比较运算符</h2><p>ａ．一个＝，用于赋值<br>　　两个＝＝，用于比较，数值要相等，类型可以不相等，比如说有带＂＂，数相等的话，运行的依旧是TURE<br>    三个＝＝＝，用于绝对比较，不但数值应相等，类型也应该要相等，这里的数值带上＂＂，运行结果就会是FLASE<br>ｂ．对于不等于号，不仅有想！＝的表达，还有像＜＞这样的表达，还有不恒等！＝＝</p><p>　## 3.三元运算符<br>也称为条件运算符，首先根据评估结果评估真值或假值的表达式，然后执行两个给定语句之一如<br>(expr1) ? (expr2) : (expr3)<br>若expr1求值为真，则输出expr2，若为假，则输出expr3<br>　<br>　## 关于运算符的优先级，我就贴上教程中的图片，方便复习<br><img src="https://i.loli.net/2021/10/30/LJFsk3QuZAcIbKN.png" alt="屏幕截图 2021-10-30 150147.png"></p><p>　## 太空船运算符，符号为＜＝＞<br>$c = $a &lt;=&gt; $b;<br>这句代码的意思是</p><p>如果$a &gt; $b, $c 的值为1<br>如果$a == $b, $c 的值为0<br>如果$a &lt; $b, $c 的值为-1</p>]]></content>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;PHP的运算符类型大多与C语言的类似，所以我只列出一些它所特有的，以供我自己的复习&quot;&gt;&lt;a href=&quot;#PHP的运算符类型大多与C语言的类似，所以我只列出一些它所特有的，以供我自己的复习&quot; class=&quot;headerlink&quot; title=&quot;PHP的运算符类型大多与C语言的类似，所以我只列出一些它所特有的，以供我自己的复习&quot;&gt;&lt;/a&gt;PHP的运算符类型大多与C语言的类似，所以我只列出一些它所特有的，以供我自己的复习&lt;/h2&gt;</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>PHP常量学习</title>
