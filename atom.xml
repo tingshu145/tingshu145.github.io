@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-11-01T15:09:52.994Z</updated>
+  <updated>2021-11-03T10:44:21.451Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://example.com/2021/11/01/HTML%E5%88%9D%E5%AD%A6%E4%B9%A0/"/>
     <id>http://example.com/2021/11/01/HTML%E5%88%9D%E5%AD%A6%E4%B9%A0/</id>
     <published>2021-11-01T14:19:38.000Z</published>
-    <updated>2021-11-01T15:09:52.994Z</updated>
+    <updated>2021-11-03T10:44:21.451Z</updated>
     
     <content type="html"><![CDATA[<p>每个HTML文件里开头都有的doctype： 声明位于文档中的最前面的位置，处于  标签之前。此标签可告知浏览器文档使用哪种 HTML 或 XHTML 规范</p><span id="more"></span><h2 id="1-标签"><a href="#1-标签" class="headerlink" title="1.标签"></a>1.标签</h2><p>  HTML的的标签是存在与&lt;&gt;中的关键词<br>通常是成对出现的，<b>与</b>成为开始标签和结束标签，一般不输出结束标签也能运行，但可能会出现难预计的错误</p><!--more--><p>*HTML标签对于大小写不敏感,但使用小写会更方便</p><h2 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h2><p>  HTML中属性一般描述与开始标签，可在属性中用<a>引用链接，用herf指定<br>大多数都能使用的属性<br><img src="https://i.loli.net/2021/11/01/WJXo6fFgmTaPOjv.png" alt="屏幕截图 2021-11-01 223139.png"></a></p><h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><p>HTML中的标题很重要，会在搜索引擎中留下你的标题作为检索</p><h2 id="定义文本"><a href="#定义文本" class="headerlink" title="定义文本"></a>定义文本</h2><p><img src="https://i.loli.net/2021/11/01/p9QstiPXZgST8U5.png" alt="屏幕截图 2021-11-01 220916.png"></p>]]></content>
     
