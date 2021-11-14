@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-11-14T10:43:32.347Z</updated>
+  <updated>2021-11-14T14:00:42.281Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://example.com/2021/11/14/%E5%85%B3%E4%BA%8Esql%E9%9D%B6%E5%9C%BA%E7%9A%84%E6%90%AD%E5%BB%BA%E9%97%AE%E9%A2%98/"/>
     <id>http://example.com/2021/11/14/%E5%85%B3%E4%BA%8Esql%E9%9D%B6%E5%9C%BA%E7%9A%84%E6%90%AD%E5%BB%BA%E9%97%AE%E9%A2%98/</id>
     <published>2021-11-14T09:53:47.000Z</published>
-    <updated>2021-11-14T10:43:32.347Z</updated>
+    <updated>2021-11-14T14:00:42.281Z</updated>
     
-    <content type="html"><![CDATA[<p>因为我之前没有搭建过sql靶场，没有做过less 1的题目，所以对于sql注入的语法不懂，所以我需要先搭靶场，遇到了一些问题，以下是我遇到的问题以及解决方法。</p><span id="more"></span>   <h3 id="1-在命令行中输入mysql-uroot-p没有反应"><a href="#1-在命令行中输入mysql-uroot-p没有反应" class="headerlink" title="1.在命令行中输入mysql -uroot -p没有反应"></a>1.在命令行中输入mysql -uroot -p没有反应</h3><p>查询后发现因为没有配置环境变量，在存储的文件夹mysql-bin 打开命令行就可以施行mysql。</p><p>但后来在配置好后在命令行输入也可以打开了</p><p><img src="https://i.loli.net/2021/11/14/xrhLmI2bPC8BUHE.png" alt="屏幕截图 2021-11-14 180405.png"></p><h3 id="2-从PHP-study中进入靶场页面后打开题目显示"><a href="#2-从PHP-study中进入靶场页面后打开题目显示" class="headerlink" title="2.从PHP study中进入靶场页面后打开题目显示"></a>2.从PHP study中进入靶场页面后打开题目显示</h3><p><img src="https://i.loli.net/2021/11/14/poGeNDjLXni8f7F.png" alt="屏幕截图 2021-11-13 220514.png"></p><p>问过学长后得知是没有建立databases的库，打算建立却又遇到了下面的问题</p><p><img src="https://i.loli.net/2021/11/14/StVKHrm2CTQUkJR.png" alt="屏幕截图 2021-11-14 113940.png"></p><p>后上网查询后发现是PHP版本的问题，在phpstudy中更换后就可以进入啦</p><p><img src="https://i.loli.net/2021/11/14/9T2KY8pRtLbfSem.png" alt="屏幕截图 2021-11-14 115342.png"></p><p>后再在命令行中输入show databases;就可以看见security这个库了。</p>]]></content>
+    <content type="html"><![CDATA[<p>因为我之前没有搭建过sql靶场，没有做过less 1的题目，所以对于sql注入的语法不懂，所以我需要先搭靶场，遇到了一些问题，以下是我遇到的问题以及解决方法。</p><span id="more"></span>   <h3 id="1-在命令行中输入mysql-uroot-p没有反应"><a href="#1-在命令行中输入mysql-uroot-p没有反应" class="headerlink" title="1.在命令行中输入mysql -uroot -p没有反应"></a>1.在命令行中输入mysql -uroot -p没有反应</h3><p>查询后发现因为没有配置环境变量，在存储的文件夹mysql-bin 打开命令行就可以施行mysql。</p><p>但后来在配置好后在命令行输入也可以打开了</p><p><img src="https://i.loli.net/2021/11/14/xrhLmI2bPC8BUHE.png" alt="屏幕截图 2021-11-14 180405.png"></p><h3 id="2-从PHP-study中进入靶场页面后打开题目显示"><a href="#2-从PHP-study中进入靶场页面后打开题目显示" class="headerlink" title="2.从PHP study中进入靶场页面后打开题目显示"></a>2.从PHP study中进入靶场页面后打开题目显示</h3><p><img src="https://i.loli.net/2021/11/14/poGeNDjLXni8f7F.png" alt="屏幕截图 2021-11-13 220514.png"></p><p>问过学长后得知是没有建立databases的库，打算建立却又遇到了下面的问题</p><p><img src="https://i.loli.net/2021/11/14/StVKHrm2CTQUkJR.png" alt="屏幕截图 2021-11-14 113940.png"></p><p>后上网查询后更改depass中内容<br><img src="https://i.loli.net/2021/11/14/xHdIt7j1mLfDnwF.png" alt="屏幕截图 2021-11-14 215827.png"></p><p><img src="https://i.loli.net/2021/11/14/9T2KY8pRtLbfSem.png" alt="屏幕截图 2021-11-14 115342.png"></p><p>后再在命令行中输入show databases;就可以看见security这个库了。</p>]]></content>
     
     
     <summary type="html">&lt;p&gt;因为我之前没有搭建过sql靶场，没有做过less 1的题目，所以对于sql注入的语法不懂，所以我需要先搭靶场，遇到了一些问题，以下是我遇到的问题以及解决方法。&lt;/p&gt;</summary>
