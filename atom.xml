@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-11-17T10:44:14.820Z</updated>
+  <updated>2021-11-20T13:30:07.096Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>less2-5</title>
+    <link href="http://example.com/2021/11/20/less2-5/"/>
+    <id>http://example.com/2021/11/20/less2-5/</id>
+    <published>2021-11-20T13:29:23.000Z</published>
+    <updated>2021-11-20T13:30:07.096Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="less2"><a href="#less2" class="headerlink" title="less2."></a>less2.</h3><p>首先判断是数字型的注入，在?id=1后加上‘ 报错，</p><span id="more"></span>  <p><img src="https://i.loli.net/2021/11/17/4K2U5cpdrDo6TFf.png" alt="屏幕截图 2021-11-17 185732.png"></p><p>通过报错的内容得知多加了一个’</p><p>去掉‘ 后回显正常</p><p>后面的做法与less1相同</p><h3 id="less3"><a href="#less3" class="headerlink" title="less3."></a>less3.</h3><p>在?id=1’ 时通过报错得知此关的闭合方式(‘ ‘)，</p><p><img src="https://i.loli.net/2021/11/17/Lwryt9e5cCSoqfs.png" alt="屏幕截图 2021-11-17 185650.png"></p><p>所以只需在 ?id=1后加上）即可</p><p>后面与less1，less2做法相同</p><h3 id="less4"><a href="#less4" class="headerlink" title="less4."></a>less4.</h3><p>在?id=1”发现闭合方式为 ( “  “)</p><p><img src="https://i.loli.net/2021/11/17/s4kVWuLnIjY1rt3.png" alt="屏幕截图 2021-11-17 192434.png"></p><p>在这里注意双引号 ”不等于两个单引号‘’，输入两个单引号不会报错</p><p>所以此关输入?id=1”)即可</p><p>后面的做法依旧相同</p><h3 id="less-5"><a href="#less-5" class="headerlink" title="less.5"></a>less.5</h3><p>通过提示我们要输入一个id值</p><p>输入?id=1，回显出you are in…..的语句</p><p>而当输入?id=1000这种明显错误的id值时，回显错误</p><p>由此判断这是一道bool盲注的题目，正确时输出you are in，而错误时则不输出。</p><p>后order by 语句和union select都回显正确</p><p>在这里使用left函数</p><p>?id=1’ and select left((select database()),1)=’s’,回显正确</p><p>一个一个试很慢，所以在这可以使用写脚本或burp suite的方式</p><p>可我现在还不会写一个完整的脚本，所以我尝试使用burp suite暴力破解的方式，虽然这也很慢。</p><p>之前的burp suite出了问题，所以我又重新搞了挺久，问了学长挺多问题，现在算是解决了</p><p>写一下具体的流程，便于我以后的操作</p><p>打开burp suite拦截，火狐浏览器打开题目，打开代理</p><p>将拦截数据发送到破解，清楚数据，将第一个数据设为未知数，选择Brute forcer</p><p>如果没有混合数据就将数字删除，以后肯定会混合的……最小，最大长度都选择1，线程选择30</p><p>我的版本找不到start attract，后发现在上方的intruder中</p><p>暴力破解</p><p>在status中若显示404，可能是靶机时效过了，length没有不一样的可能是语句出错了，看response</p><p>找到不一样的字母就为第一个字符，后重复操作</p><p>也可以在题目中使用ascii函数+二分法判断</p><p>库  ?id=1’ and ascii(substr((select schema_namefrom information_schema.schemata limit1,1),1,1))&gt;100–+</p><p>表 ?id=1’ and ascii(substr((select table_name from information_schema.tables where table_schema=0xsecurity limit 1,1),1,1))&gt;100–+</p><p>字段 ?id=1’ and ascii(substr((select column_name from information_schema.columns where table_schema=0xusers limit 1,1),1,1))&gt;100–+</p><p>数据 ?id=1’ and ascii(substr((select username from security.users limit 1,1),1,1))&gt;1–+</p><p>就是猜</p><p>图太多了，懒的贴</p>]]></content>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;less2&quot;&gt;&lt;a href=&quot;#less2&quot; class=&quot;headerlink&quot; title=&quot;less2.&quot;&gt;&lt;/a&gt;less2.&lt;/h3&gt;&lt;p&gt;首先判断是数字型的注入，在?id=1后加上‘ 报错，&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>less1,lovesql</title>

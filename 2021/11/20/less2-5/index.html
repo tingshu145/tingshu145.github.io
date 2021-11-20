@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>less2-5 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="less2.首先判断是数字型的注入，在?id&#x3D;1后加上‘ 报错，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="less2-5">
+<meta property="og:url" content="http://example.com/2021/11/20/less2-5/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="less2.首先判断是数字型的注入，在?id&#x3D;1后加上‘ 报错，">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i.loli.net/2021/11/17/4K2U5cpdrDo6TFf.png">
+<meta property="og:image" content="https://i.loli.net/2021/11/17/Lwryt9e5cCSoqfs.png">
+<meta property="og:image" content="https://i.loli.net/2021/11/17/s4kVWuLnIjY1rt3.png">
+<meta property="article:published_time" content="2021-11-20T13:29:23.000Z">
+<meta property="article:modified_time" content="2021-11-20T13:30:07.096Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/11/17/4K2U5cpdrDo6TFf.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-less2-5" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/11/20/less2-5/" class="article-date">
+  <time class="dt-published" datetime="2021-11-20T13:29:23.000Z" itemprop="datePublished">2021-11-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      less2-5
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h3 id="less2"><a href="#less2" class="headerlink" title="less2."></a>less2.</h3><p>首先判断是数字型的注入，在?id=1后加上‘ 报错，</p>
+<span id="more"></span>  
+
+<p><img src="https://i.loli.net/2021/11/17/4K2U5cpdrDo6TFf.png" alt="屏幕截图 2021-11-17 185732.png"></p>
+<p>通过报错的内容得知多加了一个’</p>
+<p>去掉‘ 后回显正常</p>
+<p>后面的做法与less1相同</p>
+<h3 id="less3"><a href="#less3" class="headerlink" title="less3."></a>less3.</h3><p>在?id=1’ 时通过报错得知此关的闭合方式(‘ ‘)，</p>
+<p><img src="https://i.loli.net/2021/11/17/Lwryt9e5cCSoqfs.png" alt="屏幕截图 2021-11-17 185650.png"></p>
+<p>所以只需在 ?id=1后加上）即可</p>
+<p>后面与less1，less2做法相同</p>
+<h3 id="less4"><a href="#less4" class="headerlink" title="less4."></a>less4.</h3><p>在?id=1”发现闭合方式为 ( “  “)</p>
+<p><img src="https://i.loli.net/2021/11/17/s4kVWuLnIjY1rt3.png" alt="屏幕截图 2021-11-17 192434.png"></p>
+<p>在这里注意双引号 ”不等于两个单引号‘’，输入两个单引号不会报错</p>
+<p>所以此关输入?id=1”)即可</p>
+<p>后面的做法依旧相同</p>
+<h3 id="less-5"><a href="#less-5" class="headerlink" title="less.5"></a>less.5</h3><p>通过提示我们要输入一个id值</p>
+<p>输入?id=1，回显出you are in…..的语句</p>
+<p>而当输入?id=1000这种明显错误的id值时，回显错误</p>
+<p>由此判断这是一道bool盲注的题目，正确时输出you are in，而错误时则不输出。</p>
+<p>后order by 语句和union select都回显正确</p>
+<p>在这里使用left函数</p>
+<p>?id=1’ and select left((select database()),1)=’s’,回显正确</p>
+<p>一个一个试很慢，所以在这可以使用写脚本或burp suite的方式</p>
+<p>可我现在还不会写一个完整的脚本，所以我尝试使用burp suite暴力破解的方式，虽然这也很慢。</p>
+<p>之前的burp suite出了问题，所以我又重新搞了挺久，问了学长挺多问题，现在算是解决了</p>
+<p>写一下具体的流程，便于我以后的操作</p>
+<p>打开burp suite拦截，火狐浏览器打开题目，打开代理</p>
+<p>将拦截数据发送到破解，清楚数据，将第一个数据设为未知数，选择Brute forcer</p>
+<p>如果没有混合数据就将数字删除，以后肯定会混合的……最小，最大长度都选择1，线程选择30</p>
+<p>我的版本找不到start attract，后发现在上方的intruder中</p>
+<p>暴力破解</p>
+<p>在status中若显示404，可能是靶机时效过了，length没有不一样的可能是语句出错了，看response</p>
+<p>找到不一样的字母就为第一个字符，后重复操作</p>
+<p>也可以在题目中使用ascii函数+二分法判断</p>
+<p>库  ?id=1’ and ascii(substr((select schema_namefrom information_schema.schemata limit1,1),1,1))&gt;100–+</p>
+<p>表 ?id=1’ and ascii(substr((select table_name from information_schema.tables where table_schema=0xsecurity limit 1,1),1,1))&gt;100–+</p>
+<p>字段 ?id=1’ and ascii(substr((select column_name from information_schema.columns where table_schema=0xusers limit 1,1),1,1))&gt;100–+</p>
+<p>数据 ?id=1’ and ascii(substr((select username from security.users limit 1,1),1,1))&gt;1–+</p>
+<p>就是猜</p>
+<p>图太多了，懒的贴</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/11/20/less2-5/" data-id="ckw7umn4a0005w8ty0fsb1gjv" data-title="less2-5" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2021/11/17/less1-lovesql/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">less1,lovesql</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/11/">November 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/10/">October 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/09/">September 2021</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2021/11/20/less2-5/">less2-5</a>
+          </li>
+        
+          <li>
+            <a href="/2021/11/17/less1-lovesql/">less1,lovesql</a>
+          </li>
+        
+          <li>
+            <a href="/2021/11/14/%E5%85%B3%E4%BA%8Esql%E9%9D%B6%E5%9C%BA%E7%9A%84%E6%90%AD%E5%BB%BA%E9%97%AE%E9%A2%98/">关于sql靶场的搭建问题</a>
+          </li>
+        
+          <li>
+            <a href="/2021/11/10/C%E8%AF%AD%E8%A8%80%E5%BE%AA%E7%8E%AF2/">C语言循环2</a>
+          </li>
+        
+          <li>
+            <a href="/2021/11/03/C%E8%AF%AD%E8%A8%80%E5%BE%AA%E7%8E%AF%E5%8C%BA%E5%88%AB1/">C语言循环区别1</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2021 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
